@@ -1,0 +1,274 @@
+@import "_nullstyle.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body.unscroll {
+    overflow: hidden;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+
+
+/*-----HEADER--------*/
+
+
+.header {
+    padding-top: 46px;
+    background-color: #F1F1F1;
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 74px 0px;
+    }
+    
+    &__logo {
+        position: relative;
+        padding: 0 12px 3px 0;
+
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+    }
+
+    &__logo::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+
+        display: block;
+        background-color: #FDA300;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 176px;
+    }
+
+    &__content {
+        max-width: 500px;
+    }
+
+    &__title {
+        font-size: 44px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 124px 0px 20px 0px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2;
+        margin-bottom: 124px;
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.nav {
+
+
+    &__list {
+        display: flex;
+        column-gap: 50px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__list-item a{
+        color: #000;
+        transition: 0.3s;
+    }
+
+    &__list-item a:hover {
+        color: #606060;
+        
+    }
+
+    &__list-item a:active {
+        color: #606060;
+    }
+
+    &__btn {
+        display: none;
+    }
+}
+
+/*-----SERVICES--------*/
+
+.services {
+    padding: 90px 0;
+
+    &__row {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__column {
+        
+    }
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__column p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 2;
+    }
+}
+
+
+/*-----PORTFOLIO--------*/
+
+
+.portfolio {
+    background-color: #F1F1F1;
+    padding: 90px 0;
+
+    &__title {
+        margin: 0px 0px 70px 0px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 75px;
+        align-items: center;
+    }
+
+
+    &__img:hover {
+        transform: scale(1.05);
+    }
+
+    &__img {
+        max-width: 100%;
+        transition: 0.3s;
+    }
+
+}
+
+/*-----FOOTER--------*/
+
+.footer {
+    padding: 90px 0;
+
+    &__contact {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0px 0px 40px 0px;
+    }
+
+    &__txt {
+        margin: 0px 0px 40px 0px;
+
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__button {
+        margin: 0px 0px 90px 0px;
+
+        background-color: #000;
+
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px 23px;
+        border-radius: 40px;
+        transition: background-color 0.2s ease-in, top 0.4s ease-in;
+    }
+
+    &__button:hover{
+        background-color: #606060;
+    }
+
+    &__button:active{
+        position: relative;
+        background-color: #000;
+        top: 3px
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 40px 0px;
+    }
+
+
+    &__down {
+        color: #828282;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__social-img {
+        transition: transform 0.2s ease-in, top 0.3s ease-in;
+    }
+
+    &__social-img:hover {
+        transform: scale(1.2);
+    }
+
+    &__social-img:active {
+        position: relative;
+        top: 2px;
+    }
+}
+
+
+
+@import "media.scss";
